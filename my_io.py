@@ -141,11 +141,3 @@ def print_array_with_dataframe(array):
     print(pd.DataFrame(array))
 
 
-def generate_dataset(
-     matrix_size: int, file: str = None) -> np.ndarray:
-    matrix = np.random.rand(matrix_size, matrix_size)
-    adjacency_matrix = matrix / np.sum(matrix)
-    if(file is not None):
-        DF = pd.DataFrame(adjacency_matrix)
-        DF.to_csv(file)
-    return adjacency_matrix
