@@ -139,5 +139,3 @@ def nparray_to_csv(file: str, input: np.ndarray, decimal: int) -> None:
 
 def print_array_with_dataframe(array):
     print(pd.DataFrame(array))
-
-
